@@ -27,10 +27,12 @@ body {
     width: min(90vw, 420px);
     height: min(90vh, 620px);
     padding: 32px 16px;
-    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
-    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    border-radius: 8px;
+    -webkit-box-shadow: 8px 8px 24px 0px rgb(19, 20, 32), inset 8px 8px 24px 0px rgba(104, 105, 110, 0.14);
+    -moz-box-shadow: 8px 8px 24px 0px rgb(19, 20, 32), inset 8px 8px 24px 0px rgba(104, 105, 110, 0.14);
+    box-shadow: 8px 8px 24px 0px rgb(19, 20, 32), inset 8px 8px 24px 0px rgba(104, 105, 110, 0.14);
 }
+
 .calculator--input {
     display: flex;
     justify-content: center;
@@ -42,12 +44,15 @@ body {
     height: 80%;
     background: #0d081d4d;
     border: none;
-    color: rgb(232, 246, 232);
+    color: rgb(211, 236, 246);
     text-align: right;
-    font-size: calc(16px + 4vh);
+    font-size: calc(16px + 5vh);
     font-family: 'Open 24 Display St';
     padding: 0px 32px;
     letter-spacing: 0.5rem;
+    -webkit-box-shadow: inset 8px 8px 24px 0px rgba(2, 2, 33, 0.392);
+    -moz-box-shadow: inset 8px 8px 24px 0px rgba(2, 2, 33, 0.392);
+    box-shadow: inset 8px 8px 24px 0px rgba(2, 2, 33, 0.392);
 }
 
 .calculator--btn {
@@ -57,30 +62,54 @@ body {
     height: 15%;
 }
 
-.calculator--btn button {
+.calculator--btn .btn {
     width: 20%;
     height: 90%;
     margin: 0.4rem;
     background: #7d7c7c23;
     border-radius: 8px;
     border: none;
-    color: rgb(255, 255, 255);
+    color: rgb(215, 246, 253);
     font-size: calc(8px + 2vh);
+    -webkit-box-shadow: 14px 14px 22px -16px rgb(2, 1, 8), inset 8px 8px 24px 0px rgba(92, 93, 110, 0.391);
+    -moz-box-shadow: 14px 14px 22px -16px rgb(2, 1, 8), inset 8px 8px 24px 0px rgba(92, 93, 110, 0.391);
+    box-shadow: 14px 14px 22px -16px rgb(2, 1, 8), inset 8px 8px 24px 0px rgba(92, 93, 110, 0.391);
+}
+.calculator--btn .btn--0 {
+    width: 44%;
 }
 
-.calculator--btn .btn--operator:hover {
-    background-color: rgba(176, 176, 177, 0.598);
-    color: rgb(0, 0, 0);
+.calculator--btn .btn--reset {
+    background-color: rgba(97, 97, 151, 0.598);
+    color: rgb(19, 16, 63);
 }
 
 .calculator--btn .btn--number {
     background: #cdcdcd23;
+    
+}
+
+.calculator--btn .btn--operator:hover {
+    background-color: rgba(162, 162, 232, 0.598);
+    color: rgb(4, 1, 51);
+    -webkit-box-shadow: 14px 14px 22px -16px rgb(2, 1, 8), inset 8px 8px 24px 0px rgba(147, 147, 172, 0.75);
+    -moz-box-shadow: 14px 14px 22px -16px rgb(2, 1, 8), inset 8px 8px 24px 0px rgba(147, 147, 172, 0.75);
+    box-shadow: 14px 14px 22px -16px rgb(2, 1, 8), inset 8px 8px 24px 0px rgba(147, 147, 172, 0.75);
+}
+
+.calculator--btn .btn--reset:hover {
+    color: rgb(247, 247, 247);
+    background-color: rgba(234, 232, 252, 0.628);
+    scale: 0.90;
+    -webkit-box-shadow: 14px 14px 22px -16px rgb(2, 1, 8), inset 8px 8px 24px 0px rgba(227, 227, 238, 0.75);
+    -moz-box-shadow: 14px 14px 22px -16px rgb(2, 1, 8), inset 8px 8px 24px 0px rgba(227, 227, 238, 0.75);
+    box-shadow: 14px 14px 22px -16px rgb(2, 1, 8), inset 8px 8px 24px 0px rgba(227, 227, 238, 0.75);
 }
 
 .calculator--btn .btn--number:hover {
-    background-color: rgba(255, 255, 255, 0.688);
-    color: rgb(80, 82, 85);
-}
-.calculator--btn .btn--0 {
-    width: 43%;
+    background-color: rgba(214, 215, 251, 0.688);
+    color: rgb(61, 75, 103);
+    -webkit-box-shadow: 14px 14px 22px -16px rgb(2, 1, 8), inset 8px 8px 24px 0px rgba(219, 219, 232, 0.75);
+    -moz-box-shadow: 14px 14px 22px -16px rgb(2, 1, 8), inset 8px 8px 24px 0px rgba(219, 219, 232, 0.75);
+    box-shadow: 14px 14px 22px -16px rgb(2, 1, 8), inset 8px 8px 24px 0px rgba(219, 219, 232, 0.75);
 }
