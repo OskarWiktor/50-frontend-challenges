@@ -23,39 +23,40 @@
 <body>
     <div class="container">
         <div class="calculator">
-            <div class="calculator--input">
-                <input type="number">
+            <div class="calculator--screen">
+                <input type="text" id="result" class="screen">
             </div>
             <div class="calculator--btn">
-                <input type="button" value="AC" class="btn btn--operator btn--reset"></input>
+                <input type="button" value="AC" onclick="clearScreen()" class="btn btn--operator btn--reset"></input>
                 <input type="button" value="+/-" class="btn btn--operator"></input>
-                <input type="button" value="%" class="btn btn--operator"></input>
-                <input type="button" value="/" class="btn btn--operator"></input>
+                <input type="button" value="%" onClick="display('%')" class="btn btn--operator"></input>
+                <input type="button" value="/" onClick="display('/')" class="btn btn--operator"></input>
             </div>
             <div class="calculator--btn">
                 <input type="button" value="7" onClick="display('7')" class="btn btn--number"></input>
-                <input type="button" value="8" class="btn btn--number"></input>
-                <input type="button" value="9" class="btn btn--number"></input>
-                <input type="button" value="*" class="btn btn--operator"></input>
+                <input type="button" value="8" onClick="display('8')" class="btn btn--number"></input>
+                <input type="button" value="9" onClick="display('9')" class="btn btn--number"></input>
+                <input type="button" value="*" onClick="display('*')" class="btn btn--operator"></input>
             </div>
             <div class="calculator--btn">
-                <input type="button" value="4" class="btn btn--number"></input>
-                <input type="button" value="5" class="btn btn--number"></input>
-                <input type="button" value="6" class="btn btn--number"></input>
-                <input type="button" value="-" class="btn btn--operator"></input>
+                <input type="button" value="4" onClick="display('4')" class="btn btn--number"></input>
+                <input type="button" value="5" onClick="display('5')" class="btn btn--number"></input>
+                <input type="button" value="6" onClick="display('6')" class="btn btn--number"></input>
+                <input type="button" value="-" onClick="display('-')" class="btn btn--operator"></input>
             </div>
             <div class="calculator--btn">
-                <input type="button" value="1" class="btn btn--number"></input>
-                <input type="button" value="2" class="btn btn--number"></input>
-                <input type="button" value="3" class="btn btn--number"></input>
-                <input type="button" value="+" class="btn btn--operator"></input>
+                <input type="button" value="1" onClick="display('1')" class="btn btn--number"></input>
+                <input type="button" value="2" onClick="display('2')" class="btn btn--number"></input>
+                <input type="button" value="3" onClick="display('3')" class="btn btn--number"></input>
+                <input type="button" value="+" onClick="display('+')" class="btn btn--operator"></input>
             </div>
             <div class="calculator--btn">
-                <input type="button" value="0" class="btn btn--0 btn--number"></input>
-                <input type="button" value="." class="btn btn--number"></input>
-                <input type="button" value="=" class="btn btn--operator"></input>
+                <input type="button" value="0" onClick="display('0')" class="btn btn--0 btn--number"></input>
+                <input type="button" value="." onClick="display('.')" class="btn btn--number"></input>
+                <input type="button" value="=" onClick="solve()" class="btn btn--operator"></input>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

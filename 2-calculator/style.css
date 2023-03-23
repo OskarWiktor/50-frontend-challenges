@@ -9,7 +9,7 @@
 
 body {
     margin: 0;
-    background-color: rgb(41, 41, 50);
+    background-image: linear-gradient(32deg, rgb(71, 72, 81) 0%, rgb(30, 25, 42) 92%);
 }
 
 .container {
@@ -33,13 +33,13 @@ body {
     box-shadow: 8px 8px 24px 0px rgb(19, 20, 32), inset 8px 8px 24px 0px rgba(104, 105, 110, 0.14);
 }
 
-.calculator--input {
+.calculator--screen {
     display: flex;
     justify-content: center;
     width: 100%;
     height: 25%;
 }
-.calculator--input input {
+.calculator--screen .screen {
     width: 75%;
     height: 80%;
     background: #0d081d4d;
@@ -75,6 +75,10 @@ body {
     -moz-box-shadow: 14px 14px 22px -16px rgb(2, 1, 8), inset 8px 8px 24px 0px rgba(92, 93, 110, 0.391);
     box-shadow: 14px 14px 22px -16px rgb(2, 1, 8), inset 8px 8px 24px 0px rgba(92, 93, 110, 0.391);
 }
+
+.calculator--btn .btn:active{
+    scale: 0.90;
+}
 .calculator--btn .btn--0 {
     width: 44%;
 }
@@ -100,7 +104,6 @@ body {
 .calculator--btn .btn--reset:hover {
     color: rgb(247, 247, 247);
     background-color: rgba(234, 232, 252, 0.628);
-    scale: 0.90;
     -webkit-box-shadow: 14px 14px 22px -16px rgb(2, 1, 8), inset 8px 8px 24px 0px rgba(227, 227, 238, 0.75);
     -moz-box-shadow: 14px 14px 22px -16px rgb(2, 1, 8), inset 8px 8px 24px 0px rgba(227, 227, 238, 0.75);
     box-shadow: 14px 14px 22px -16px rgb(2, 1, 8), inset 8px 8px 24px 0px rgba(227, 227, 238, 0.75);
