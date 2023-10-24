@@ -31,6 +31,9 @@
   padding: 8px 12px;
   transition: max-width 0.3s ease;
 }
+.input:focus, .input.show:focus {
+    outline: none;
+}
 
 .search-icon {
   position: relative;
