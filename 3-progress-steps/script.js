@@ -2,7 +2,7 @@ const progressLine = document.getElementById("progress-line");
 const buttonPrev = document.getElementById("button-prev");
 const buttonNext = document.getElementById("button-next");
 const number = document.querySelectorAll(".number");
-console.log(number);
+
 let activeNumbers = 1;
 
 buttonNext.addEventListener("click", () => {
