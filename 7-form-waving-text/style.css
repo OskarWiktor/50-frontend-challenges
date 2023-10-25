@@ -1,77 +1,99 @@
 * {
-    box-sizing: border-box;
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100dvw;
-    height: 100dvh;
-    background-color: rgb(87, 133, 166);
-    padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100dvw;
+  height: 100dvh;
+  background-color: rgb(53, 112, 154);
+  padding: 12px;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 320px;
-    height: 380px;
-    background-color: rgb(25, 79, 120);
-    padding: 28px 32px;
-    border-radius: 6px;
-    color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 320px;
+  height: 380px;
+  background-color: rgba(0, 0, 0, 0.348);
+  padding: 28px 32px;
+  border-radius: 6px;
+  color: aliceblue;
 }
 
 .title {
-    font-size: 28px;
-    font-weight: 100;
+  font-size: 28px;
+  font-weight: 100;
 }
+.label span {
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.input:focus + .label span,
+.input:valid + .label span {
+  color: rgb(138, 200, 211);
+  font-size: 15px;
+  display: inline-block;
+  min-width: 4px;
+  transform: translateY(-26px);
+}
+
 .input {
-    width: 100%;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.397);
-    margin-top: 28px;
-    padding: 8px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.397);
+  margin-top: 28px;
+  padding: 8px 0px;
+  color: rgba(255, 255, 255, 0.397);
 }
 .input:focus {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.942);
-    color: rgba(255, 255, 255, 0.942);
-    outline: none;
+  border-bottom: 1px solid rgb(138, 200, 211);
+  color: rgba(255, 255, 255, 0.942);
+  outline: none;
 }
 .label {
-    align-self: flex-start;
-    font-size: 14px;
-    margin-top: 4px;
-    color: rgba(255, 255, 255, 0.397);
+  align-self: flex-start;
+  font-size: 14px;
+  margin-top: 4px;
+  color: rgba(255, 255, 255, 0.397);
+}
+
+.label span {
+    position: relative;
+    top: -26px;
 }
 
 .login-btn {
-    width: 100%;
-    background-color: rgb(138, 200, 211);
-    border: none;
-    cursor: pointer;
-    padding: 12px 0px;
-    color: rgb(25, 79, 120);
-    font-size: 14px;
-    font-weight: 600;
-    border-radius: 4px;
-    margin-top: 28px;
+  width: 100%;
+  background-color: rgb(138, 200, 211);
+  border: none;
+  cursor: pointer;
+  padding: 12px 0px;
+  color: rgb(25, 79, 120);
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 4px;
+  margin-top: 28px;
+}
+.login-btn:active {
+  transform: scale(0.99);
 }
 
 .register--text {
-    align-self: flex-start;
-    margin-top: 28px;
-    font-size: 14px;
+  align-self: flex-start;
+  margin-top: 28px;
+  font-size: 14px;
 }
 
 .register--text__span {
-    color: rgb(138, 200, 211);
-    cursor: pointer;
+  color: rgb(138, 200, 211);
+  cursor: pointer;
 }
